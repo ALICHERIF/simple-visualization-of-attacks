@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./attacks.js">
+    </script>
+    <script src="./index.js">
+    </script>
+  
+  </head>
+  <body >
+    <h3>Visualisation of chenoff face attacks</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJxzPHD_egYnhxntqcvfem35YRjruzAg&callback=initMap"
+      async
+    ></script>
+
+  
+   <img src="attack1.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+   <img src="attack2.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack3.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack4.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack5.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     <img src="attack6.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack7.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack8.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack9.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack10.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+    <img src="attack11.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <img src="attack12.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <h1>Information for reading the faces</h1>
+      <p>The list of TCP port with the color:</p>
+
+      <div style="background-color:honeydew;">
+       <font face='verdana' >
+      <ul1  style="list-style-type:circle"  >
+         <li >21 with aliceblue</li>
+         <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="aliceblue" />
+</svg>
+      </ul1>
+      
+      <ul2  style="list-style-type:circle"  >
+         <li>25 with antiquewhite</li>
+            <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="antiquewhite" />
+</svg>
+      </ul2>
+      
+      <ul3  style="list-style-type:circle"  >
+         <li>53 with  aqua</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="aqua" />
+</svg>
+      </ul3>
+      
+      <ul4  style="list-style-type:circle"  >
+         <li>68 with aquamarine</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="aquamarine" />
+</svg>
+      </ul4>
+      
+      <ul5  style="list-style-type:circle"  >
+         <li>80 with fuchsia</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="fuchsia" />
+</svg>
+      </ul5>
+      
+      <ul6  style="list-style-type:circle"  >
+         <li>110 with lightcoral</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="lightcoral" />
+</svg>
+      </ul5>
+      
+      <ul7 style="list-style-type:circle"  >
+         <li>119 with maroon</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="maroon" />
+</svg>
+      </ul7>
+      
+      <ul8  style="list-style-type:circle"  >
+         <li>135 with red</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="red" />
+</svg>
+      </ul8>
+      
+      <ul9  style="list-style-type:circle"  >
+         <li>139 with blue</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="blue" />
+</svg>
+      </ul9>
+      
+      <ul10  style="list-style-type:circle"  >
+         <li>389 with blueviolet</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="blueviolet" />
+</svg>
+      </ul10>
+      
+      <ul11  style="list-style-type:circle"  >
+         <li>443 with brown</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="brown" />
+</svg>
+      </ul11>
+      
+      <ul12  style="list-style-type:circle"  >
+         <li>445 with burlywood</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="burlywood" />
+</svg>
+      </ul12>
+      
+      <ul13  style="list-style-type:circle"  >
+         <li>593 with cadetblue</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="cadetblue" />
+</svg>
+      </ul13>
+      
+      <ul14  style="list-style-type:circle"  >
+         <li>1028 with chartreuse</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="chartreuse" />
+</svg>
+      </ul14>
+      
+      <ul15  style="list-style-type:circle"  >
+         <li>1080 with chocolate</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="chocolate" />
+</svg>
+      </ul15>  
+      
+      <ul16  style="list-style-type:circle"  >
+         <li>1433 with coral</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="coral" />
+</svg>
+      </ul16> 
+
+      <ul17  style="list-style-type:circle"  >
+         <li>3128 with cornflowerblue</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="cornflowerblue" />
+</svg>
+      </ul17>
+      
+      <ul18  style="list-style-type:circle"  >
+         <li>3389 with indigo</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="indigo" />
+</svg>
+      </ul18>
+
+
+      <ul19  style="list-style-type:circle"  >
+         <li>5000 with crimson</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="crimson" />
+</svg>
+      </ul19>
+
+
+      <ul20  style="list-style-type:circle"  >
+         <li>5357 with cyan</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="cyan" />
+</svg>
+      </ul20>
+
+
+      <ul21  style="list-style-type:circle"  >
+         <li>5358 with darkblue</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkblue" />
+</svg>
+      </ul21>
+
+
+      <ul22  style="list-style-type:circle"  >
+         <li>8080 with darkcyan</li>
+      <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkcyan" />
+</svg>
+      </ul22>
+      </font>
+      </div>
+  <p>The list of UDP port with the color:</p>
+   <div style="background-color:honeydew;">
+<font face='verdana' >
+      <ul23  style="list-style-type:circle"  >
+
+         <li>42 with darkgoldenrod</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkgoldenrod" />
+</svg>
+      </ul23>
+
+
+      <ul24  style="list-style-type:circle"  >
+         <li>53 with darkgray</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkgray" />
+</svg>
+      </ul24>
+
+      <ul25  style="list-style-type:circle"  >
+         <li>67 with darkgreen</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkgreen" />
+</svg>
+      </ul25>
+
+      
+      <ul29  style="list-style-type:circle"  >
+         <li>88 with darkkhaki</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkkhaki" />
+</svg>
+      </ul29>
+
+
+      <ul30  style="list-style-type:circle"  >
+         <li>137 with darkmagenta</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkmagenta" />
+</svg>
+      </ul30>
+
+      <ul31  style="list-style-type:circle"  >
+         <li>138 with darkolivegreen</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkolivegreen" />
+</svg>
+      </ul31>
+
+      <ul32  style="list-style-type:circle"  >
+         <li>161 with darkorange</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkorange" />
+</svg>
+      </ul32>
+
+
+      <ul33  style="list-style-type:circle"  >
+         <li>389 with yellow</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="yellow" />
+</svg>
+      </ul33>
+
+      <ul34  style="list-style-type:circle"  >
+         <li>500 with darkred</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkred" />
+</svg>
+      </ul34>
+
+      <ul35  style="list-style-type:circle"  >
+         <li>1026 with darksalmon</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darksalmon" />
+</svg>
+      </ul35>
+
+
+      <ul36  style="list-style-type:circle"  >
+         <li>1027 with darkseagreen</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkseagreen" />
+</svg>
+      </ul36>
+
+      <ul37  style="list-style-type:circle"  >
+         <li>1434 with darkslateblue</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="darkslateblue" />
+</svg>
+      </ul37>
+
+      <ul38  style="list-style-type:circle"  >
+         <li>1900 with gold</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="gold" />
+</svg>
+      </ul38>
+
+
+      <ul39  style="list-style-type:circle"  >
+         <li>3702 with greenyellow</li>
+               <svg height="100" width="100">
+  <circle cx="50" cy="10" r="10" stroke="black" stroke-width="3" fill="greenyellow" />
+</svg>
+      </ul39>
+</font>
+</div>
+  <p>The list of TYPE of attack with the specific eyebrow:</p>
+
+   <img src="Scan.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     <img src="Connection.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="Closeport.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     <p>The list of ACTION of attack with the specific eyes:</p>
+      <img src="NATIVE.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="SimBanner.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="Close.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="SimExternal.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="SilentClose.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="SensorMontorConnection.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="Sniff.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+      <img src="ReadandClose.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+       <img src="Sim Server.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+         <img src="Sims adserver.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+         <img src="NotSpecified.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+   <p>The list of PROTOCOLS of attack with the specific noose:</p>
+    <img src="TCP.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     <img src="UDP.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+    <p>The list of SEVERITY of attack with the specific MOUTH:</p>
+       <img src="LOW.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+          <img src="MEDIUM.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+             <img src="HIGH.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     <p>The list of data received from  attack with the specific seize of the face:</p>
+
+             <img src="LOWDATA.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+             <img src="MEDIUMDATA.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+
+             <img src="LARGEDATA.svg" class="smiley" width="256" height="256" viewBox="0 0 256 256 alt="Flowers in Chania">
+     </body>
+</html>
